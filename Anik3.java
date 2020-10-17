@@ -3,23 +3,23 @@ public class selectionsort_anik
 {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter number of elements in  array");
+        System.out.println("Enter number of array elements ");
         int n=sc.nextInt();
         int sorting[]=new int[n];
-        for(int i=0;i<n     ;i++)
+        for(int i=0;i<n;i++)
         {
             System.out.println("Enter number at "+i+" of the array");
             sorting[i]=sc.nextInt();
         }
 
         sort(sorting);
-        System.out.println("Sorted list is:-");
+        System.out.println("Sorted list is:");
         
         for (int i=0; i<sorting.length; i++)
         { 
             if(i!=sorting.length-1)
             {
-                System.out.println(sorting[i]+",");
+                System.out.println(sorting[i]+", ");
             }
             else
             { 
